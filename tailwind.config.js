@@ -10,7 +10,7 @@ module.exports = {
         offBlack: '#222831',
       },
       fontFamily: {
-        oswald: ['Oswald'],
+        fira: ['Fira Code'],
       },
     },
   },

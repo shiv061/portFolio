@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@rehooks/window-scroll-position": "^1.0.1",
+    "@rehooks/window-size": "^1.0.2",
     "framer-motion": "^4.0.3",
     "next": "latest",
     "react": "^17.0.1",

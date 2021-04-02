@@ -10,13 +10,13 @@ const ScreenOne = () => {
       </div>
       <div className="row-span-1 mx-4 mt-4 mb-12 md:mb-0 md:mt-0">
         <div>
-          <h1 className="text-offWhite text-6xl">Hi,</h1>
+          <h1 className="text-offWhite text-6xl">Hello,</h1>
         </div>
         <div>
-          <h1 className="text-offWhite text-2xl leading-[4rem]">My name is Shivansh and I expertise in</h1>
+          <h1 className="text-offWhite text-4xl leading-[4rem]">I am Shivansh</h1>
         </div>
-        <motion.div animate={{ rotate: -6 }} whileHover={{ rotate: 0 }} className="border-primary bg-primary py-2 px-2 my-10 rounded cursor-pointer">
-          <h1 className="text-center text-offWhite text-2xl">Frontend and React Native Mobile Development</h1>
+        <motion.div animate={{ rotate: -6 }} whileHover={{ rotate: 0 }} className="border-primary bg-primary py-2 px-2 my-10 mx-32 rounded cursor-pointer">
+          <h1 className="text-center text-offWhite text-2xl">Frontend and React Native Developer</h1>
         </motion.div>
       </div>
       <div className="row-span-2 mt-10 md:mt-0 md:mx-10 overflow-scroll mb-10">

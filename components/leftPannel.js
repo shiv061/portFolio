@@ -57,20 +57,20 @@ const LeftPannel = ({ screen, setScreen }) => {
       </div>
       <div className="row-span-2 flex flex-col justify-center items-end">
         <motion.div className="py-6 cursor-pointer flex justify-end text-secondary w-full text-right hover:underline" onMouseEnter={() => setType('home')} onMouseLeave={() => setType('none')} onClick={() => setScreen('home')}>
-          <h1 className={`px-4 hover:opacity-50 ${screen === 'home' && 'text-5xl morph'} transition-all`}>Home</h1>
-          <AnimatePresence exitBeforeEnter>{(type === 'home' || screen === 'home') && <motion.span variants={listVariant} initial="initial" animate="animate" exit="exit" className="flex w-full h-full bg-primary rounded-tl-full rounded-bl-full" />}</AnimatePresence>
+          <h1 className={`px-4 ${screen === 'home' && 'text-5xl morph'} transition-all`}>Home</h1>
+          <AnimatePresence exitBeforeEnter>{(type === 'home' || screen === 'home') && <motion.span variants={listVariant} initial="initial" animate="animate" exit="exit" className="flex w-full h-full rounded-tl-full rounded-bl-full" />}</AnimatePresence>
         </motion.div>
         <motion.div className="py-6 cursor-pointer flex justify-end text-secondary w-full text-right hover:underline" onMouseEnter={() => setType('work')} onMouseLeave={() => setType('none')} onClick={() => setScreen('one')}>
-          <h1 className={`px-4 hover:opacity-50 ${screen === 'one' && 'text-5xl morph'} transition-all`}>Work</h1>
-          <AnimatePresence exitBeforeEnter>{(type === 'work' || screen === 'one') && <motion.span variants={listVariant} initial="initial" animate="animate" exit="exit" className="flex w-full h-full bg-primary rounded-tl-full rounded-bl-full" />}</AnimatePresence>
+          <h1 className={`px-4 ${screen === 'one' && 'text-5xl morph'} transition-all`}>Work</h1>
+          <AnimatePresence exitBeforeEnter>{(type === 'work' || screen === 'one') && <motion.span variants={listVariant} initial="initial" animate="animate" exit="exit" className="flex w-full h-full rounded-tl-full rounded-bl-full" />}</AnimatePresence>
         </motion.div>
         <motion.div className="py-6 cursor-pointer flex justify-end text-secondary w-full text-right hover:underline" onMouseEnter={() => setType('watch')} onMouseLeave={() => setType('none')} onClick={() => setScreen('two')}>
-          <h1 className={`px-4 hover:opacity-50 ${screen === 'two' && 'text-5xl morph'} transition-all`}>Watch</h1>
-          <AnimatePresence exitBeforeEnter>{(type === 'watch' || screen === 'two') && <motion.span variants={listVariant} initial="initial" animate="animate" exit="exit" className="inline-block w-full h-full bg-primary rounded-tl-full rounded-bl-full" />}</AnimatePresence>
+          <h1 className={`px-4 ${screen === 'two' && 'text-5xl morph'} transition-all`}>Watch</h1>
+          <AnimatePresence exitBeforeEnter>{(type === 'watch' || screen === 'two') && <motion.span variants={listVariant} initial="initial" animate="animate" exit="exit" className="inline-block w-full h-full rounded-tl-full rounded-bl-full" />}</AnimatePresence>
         </motion.div>
         <motion.div className="py-6 cursor-pointer flex justify-end text-secondary w-full text-right hover:underline" onMouseEnter={() => setType('me')} onMouseLeave={() => setType('none')} onClick={() => setScreen('three')}>
-          <h1 className={`px-4 hover:opacity-50 ${screen === 'three' && 'text-5xl morph'} transition-all`}>Me</h1>
-          <AnimatePresence exitBeforeEnter>{(type === 'me' || screen === 'three') && <motion.span variants={listVariant} initial="initial" animate="animate" exit="exit" className="inline-block w-full h-full bg-primary rounded-tl-full rounded-bl-full" />}</AnimatePresence>
+          <h1 className={`px-4 ${screen === 'three' && 'text-5xl morph'} transition-all`}>Me</h1>
+          <AnimatePresence exitBeforeEnter>{(type === 'me' || screen === 'three') && <motion.span variants={listVariant} initial="initial" animate="animate" exit="exit" className="inline-block w-full h-full rounded-tl-full rounded-bl-full" />}</AnimatePresence>
         </motion.div>
       </div>
     </div>

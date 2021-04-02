@@ -15,7 +15,7 @@ const Typewriter = ({ tech, rate }) => {
   if (pause) {
     return (
       <motion.div variants={variant} whileHover="hover" className="bg-secondary w-[80%] h-[80%] my-2 px-2 rounded-md cursor-pointer" onMouseLeave={() => setPause(false)}>
-        <h1 className="text-3xl text-white">{`${tech} - ${rate}`}</h1>
+        <h1 className="text-2xl text-white">{`${tech} - ${rate}`}</h1>
       </motion.div>
     );
   }
@@ -23,9 +23,9 @@ const Typewriter = ({ tech, rate }) => {
     <motion.div variants={variant} whileHover="hover" className="bg-secondary w-[80%] h-[80%] my-2 px-2 rounded-md cursor-pointer" onMouseEnter={() => setPause(true)} onMouseLeave={() => setPause(false)}>
       <ReactTypingEffect
         text={[tech, rate]}
-        cursorRenderer={(cursor) => <h1 className="text-offWhite text-3xl">{cursor}</h1>}
+        cursorRenderer={(cursor) => <h1 className="text-offWhite text-2xl">{cursor}</h1>}
         displayTextRenderer={(text) => {
-          return <h1 className="text-offWhite text-3xl">{text}</h1>;
+          return <h1 className="text-offWhite text-2xl">{text}</h1>;
         }}
         eraseSpeed={100}
         speed={100}
