@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --c: #000000;
+}
+
+.morph {
+  padding: 8px;
+  box-shadow: 0 0 0px 80px var(--c, #0000);
+  background: var(--c, #0000);
+  --c: #000;
+  color: #fff;
+  transition: 0.3s, clip-path 0.4s 0.3s;
+  clip-path: polygon(-80px -40px, 20% -30px, 30% 0, calc(50% - 15px) 0, calc(50% - 10px) -20px, calc(50% - 8px) -15px, calc(50% + 8px) -15px, calc(50% + 10px) -20px, calc(50% + 15px) 0, 70% 0, 80% -30px, calc(100% + 80px) -40px, 100% 80%, calc(100% + 20px) calc(100% + 20px), 60% 100%, 50% calc(100% + 40px), 40% 100%, -20px calc(100% + 20px), 0 80%);
+}
