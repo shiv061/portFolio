@@ -11,12 +11,6 @@ export default function Home() {
         <title>Shivansh | Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="md:col-span-1 bg-offWhite max-h-screen">
-        <LeftPannel screen={screen} setScreen={setScreen} />
-      </div>
-      <div className="md:col-span-2 bg-offBlack max-h-screen">
-        <RightPannel screen={screen} />
-      </div>
     </div>
   );
 }
