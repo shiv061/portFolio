@@ -4,13 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#00adb5',
-        secondary: '#393e46',
-        offWhite: '#eeeeee',
-        offBlack: '#222831',
+        primary: '#242424',
+        secondary: '#F2F2F2',
+        extra: {
+          100: '#D8D8D8',
+          200: '#979797',
+        },
       },
       fontFamily: {
-        fira: ['Fira Code'],
+        hind: ['Hind'],
       },
     },
   },
