@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
 
-const BounceBall = () => {
+const BounceBall = ({ divRef }) => {
   return (
     <motion.div
-      className="shadow-2xl bg-primary py-2 px-4 rounded-full cursor-pointer"
+      className="shadow-2xl bg-primary text-extra-100 hover:bg-extra-200 hover:text-primary py-2 px-4 rounded-full cursor-pointer"
       style={{
         display: 'flex',
         justifyContent: 'space-around',
@@ -19,8 +18,13 @@ const BounceBall = () => {
           repeatType: 'reverse',
         },
       }}
+      onClick={() => {
+        if (divRef.current) {
+          divRef.current.scrollTop = 0;
+        }
+      }}
     >
-      <h1 className="text-extra-100">Back To Top</h1>
+      <h1>Back To Top</h1>
     </motion.div>
   );
 };
