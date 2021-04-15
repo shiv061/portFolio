@@ -5,6 +5,7 @@ const AppContext = createContext();
 export const AppContextProvider = ({ children }) => {
   const [open, setOpen] = useState(false);
   const [page, setPage] = useState('home');
+
   return <AppContext.Provider value={{ open, setOpen, page, setPage }}>{children}</AppContext.Provider>;
 };
 

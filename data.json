@@ -6,7 +6,8 @@
             "React",
             "Hooks",
             "Context API"
-        ]
+        ],
+        "imgUri": "/reactMusic.png"
     },
     {
         "uri": "https://github-finder-react-app.netlify.app/",
@@ -15,7 +16,8 @@
             "React",
             "Axios",
             "Context API"
-        ]
+        ],
+        "imgUri": "/githubScreen.png"
     },
     {
         "uri": "https://elated-fermi-a92447.netlify.app/",
@@ -24,7 +26,8 @@
             "React",
             "Javascript",
             "Context API"
-        ]
+        ],
+        "imgUri": "/ticTacToe.png"
     },
     {
         "uri": "https://clothing-ecom.web.app/",
@@ -35,7 +38,8 @@
             "Firebase",
             "Redux Thunk",
             "Redux Persist"
-        ]
+        ],
+        "imgUri": "/ReactEcom.png"
     },
     {
         "uri": "https://wonderful-davinci-4d2eaf.netlify.app/",
@@ -44,7 +48,8 @@
             "React",
             "Typescript",
             "Context API"
-        ]
+        ],
+        "imgUri": "/trelloClone.png"
     },
     {
         "uri": "https://netflix-clone-557fe.firebaseapp.com/",
@@ -53,7 +58,8 @@
             "React",
             "Context Api",
             "Styled Components"
-        ]
+        ],
+        "imgUri": "/netflixClone.png"
     },
     {
         "uri": "https://airbnb-clone-8b4cc.web.app/",
@@ -62,7 +68,8 @@
             "React",
             "Context Api",
             "Firebase"
-        ]
+        ],
+        "imgUri": "/airbnbClone.png"
     },
     {
         "uri": "https://documenter.getpostman.com/view/7301367/TVKD1HJU#dbf298b6-ecae-4773-b3d1-41280b83daf8",
@@ -73,7 +80,8 @@
             "MongoDB",
             "Postman",
             "JWT Token"
-        ]
+        ],
+        "imgUri": "/DevcampApi.png"
     },
     {
         "uri": "https://stark-shore-80289.herokuapp.com/",
@@ -83,6 +91,7 @@
             "Class Bases",
             "Heroku",
             "CLARIFAI API"
-        ]
+        ],
+        "imgUri": "/reactFace.png"
     }
 ]
