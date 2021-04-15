@@ -42,11 +42,11 @@ const Main = ({ divRef, setScroll }) => {
             </div>
             <div>
               <ul>
-                <li className="text-primary font-extralight hover:line-through cursor-pointer pl-4"> #Zapier Application Integration</li>
-                <li className="text-primary font-extralight hover:line-through cursor-pointer pl-4"> #Reports UI Builder with Filter, Unions & Joins</li>
-                <li className="text-primary font-extralight hover:line-through cursor-pointer pl-4"> #Dashboard UI Builder With Widgets</li>
-                <li className="text-primary font-extralight hover:line-through cursor-pointer pl-4"> #Mobile - App Implementation from scratch (Android & IOS)</li>
-                <li className="text-primary font-extralight hover:line-through cursor-pointer pl-4"> #Mobile - Dashboards Implementation (With Filters)</li>
+                <li className="text-primary font-extralight hover:line-through cursor-pointer pl-4"> Zapier Application Integration</li>
+                <li className="text-primary font-extralight hover:line-through cursor-pointer pl-4"> Reports UI Builder with Filter, Unions & Joins</li>
+                <li className="text-primary font-extralight hover:line-through cursor-pointer pl-4"> Dashboard UI Builder With Widgets</li>
+                <li className="text-primary font-extralight hover:line-through cursor-pointer pl-4"> Mobile - App Implementation from scratch (Android & IOS)</li>
+                <li className="text-primary font-extralight hover:line-through cursor-pointer pl-4"> Mobile - Dashboards Implementation (With Filters)</li>
               </ul>
             </div>
           </motion.div>
