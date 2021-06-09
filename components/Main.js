@@ -2,8 +2,16 @@ import Projects from './Projects';
 import Skills from './Skills';
 import data from '../data.json';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
-const Main = ({ divRef, setScroll, scroll }) => {
+const Main = ({ divRef, setScroll, scroll, shown, setShown }) => {
+
+  useEffect(() => {
+    if (scroll > 100) {
+      setShown(true)
+    }
+  }, [scroll])
+
   return (
     <div
       ref={divRef}
@@ -97,11 +105,11 @@ const Main = ({ divRef, setScroll, scroll }) => {
         <div>
           <h1 className="tracking-widest text-primary font-semibold text-lg">PROJECTS</h1>
         </div>
-        <div className="lg:grid lg:grid-cols-2 lg:gap-4">
+        {(scroll > 100 || shown) && <div className="lg:grid lg:grid-cols-2 lg:gap-4">
           {data.map((item, index) => {
             return <Projects key={index} name={item.title} tech={item.tech} imgUri={item.imgUri} uri={item.uri} />;
           })}
-        </div>
+        </div>}
       </div>
     </div>
   );

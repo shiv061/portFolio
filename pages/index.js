@@ -5,13 +5,12 @@ import RightColumn from '../components/RightColumn';
 import { useAppContext } from '../context';
 
 export default function Home() {
-  const { open } = useAppContext();
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {}, []);
 
   const calculate = useMemo(() => Math.min(scroll/15, 100), [scroll])
-  console.log(calculate)
+
   const backgroundStyles = {
     background: 'rgb(36,36,36)',
     background: `linear-gradient(0deg, rgba(59,0,145,1)  0%,rgba(36,36,36,1) ${calculate}%)`
