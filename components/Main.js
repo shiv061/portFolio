@@ -3,7 +3,7 @@ import Skills from './Skills';
 import data from '../data.json';
 import { motion } from 'framer-motion';
 
-const Main = ({ divRef, setScroll }) => {
+const Main = ({ divRef, setScroll, scroll }) => {
   return (
     <div
       ref={divRef}

@@ -14,3 +14,9 @@
     @apply font-light text-extra-200 underline cursor-pointer hover:text-extra-100;
   }
 }
+
+.next-images:hover {
+  transform: scale(1.05);
+  transition: all 1s ease;
+  filter: blur(1px);
+}

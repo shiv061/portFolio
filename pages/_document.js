@@ -10,6 +10,9 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
+        <meta property='og:title' content='Shivansh Singh'/>
+        <meta property='og:image' content='/githubScreen.png'/>
+        <meta property='og:description' content='Build Using Next.js'/>
         <body className="font-hind">
           <Main />
           <NextScript />

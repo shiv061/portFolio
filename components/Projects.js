@@ -1,6 +1,7 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image'
 
 const Projects = ({ name, tech, imgUri, uri }) => {
   const controls = useAnimation();
@@ -26,8 +27,8 @@ const Projects = ({ name, tech, imgUri, uri }) => {
       target="_blank"
       className="grid grid-rows-3 w-full h-56 border-[1px] border-extra-100 my-6 rounded-lg overflow-hidden shadow-lg"
     >
-      <div className="row-span-2 overflow-hidden">
-        <motion.img whileHover={{ scale: 1.1 }} src={imgUri} className="w-full h-full object-cover cursor-pointer" />
+      <div className="row-span-2 overflow-hidden transition-all">
+        <Image className="next-images" src={imgUri} layout="responsive" width="100%" height="100%" placeholder="blur" />
       </div>
       <div className="row-span-1 bg-primary p-2">
         <h1 className="text-extra-100 px-2">{name}</h1>

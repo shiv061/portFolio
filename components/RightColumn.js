@@ -1,13 +1,12 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import BounceBall from './BounceBall';
 import Main from './Main';
 
-const RightColumn = () => {
-  const [scroll, setScroll] = useState(0);
+const RightColumn = ({scroll, setScroll}) => {
   const divRef = useRef(null);
   return (
     <>
-      <Main divRef={divRef} setScroll={setScroll} />
+      <Main divRef={divRef} scroll={scroll} setScroll={setScroll} />
       {scroll > 500 && <BounceBall divRef={divRef} />}
     </>
   );
