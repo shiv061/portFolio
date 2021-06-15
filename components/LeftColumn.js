@@ -29,7 +29,7 @@ const zoomVariant = {
   },
 };
 
-const LeftColumn = () => {
+const LeftColumn = (props) => {
   return (
     <div className="grid grid-rows-4 h-full">
       <div className="w-full grid place-items-center">
