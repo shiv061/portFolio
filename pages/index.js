@@ -21,11 +21,11 @@ export default function Home() {
         <title>Shivansh | Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 min-h-screen">
-        <div className="md:max-h-screen bg-primary overflow-auto overflow-x-hidden" style={backgroundStyles}>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 min-h-screen">
+        <div className="col-span-1 md:max-h-screen bg-primary overflow-auto overflow-x-hidden" style={backgroundStyles}>
           <LeftColumn />
         </div>
-        <div className="lg:col-span-3 bg-secondary">
+        <div className="col-span-2 lg:col-span-3 bg-secondary">
           <RightColumn scroll={scroll} setScroll={setScroll} />
         </div>
       </div>

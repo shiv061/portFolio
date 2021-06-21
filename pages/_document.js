@@ -10,13 +10,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <meta property='og:title' content='Shivansh Singh'/>
-        <meta property='og:image' content='https://ssr.resume.tools/to-og-image/ssid-iojwP6JpA.png'/>
-        <meta property='og:description' content='Built Using Next.js'/>
-        <meta property="og:image:secure_url" content="https://ssr.resume.tools/to-og-image/ssid-iojwP6JpA.png" />
-        <meta property="og:image:type" content="image/png"></meta>
-        <meta property="og:image:width" content="1200"></meta>
-        <meta property="og:image:height" content="630"></meta>
+        <meta property="og:title" content="Shivansh Singh" />
+        <meta name="description" property="og:description" content="Built Using Next.js"></meta>
+        <meta name="image" property="og:image" content="blob:https://vercel.com/e340642f-861f-4e99-b971-b9c8f622a12a"></meta>
+        <meta name="author" content="Shivansh Singh"></meta>
         <body className="font-hind">
           <Main />
           <NextScript />
