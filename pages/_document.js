@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head />
         <meta property="og:title" content="Shivansh Singh" />
         <meta name="description" property="og:description" content="Built Using Next.js"></meta>
-        <meta name="image" property="og:image" content="blob:https://vercel.com/e340642f-861f-4e99-b971-b9c8f622a12a"></meta>
+        <meta name="image" property="og:image" content="https://i.ibb.co/Q87CL1J/Screenshot-2021-06-21-at-12-09-14-PM.png"></meta>
         <meta name="author" content="Shivansh Singh"></meta>
         <body className="font-hind">
           <Main />
