@@ -9,12 +9,11 @@ export default function Home() {
 
   useEffect(() => {}, []);
 
-  const calculate = useMemo(() => Math.min(scroll/15, 100), [scroll])
+  const calculate = useMemo(() => Math.min(scroll / 15, 100), [scroll]);
 
   const backgroundStyles = {
-    background: 'rgb(36,36,36)',
-    background: `linear-gradient(0deg, rgba(59,0,145,1)  0%,rgba(36,36,36,1) ${calculate}%)`
-  }
+    background: `linear-gradient(0deg, rgba(59,0,145,1)  0%,rgba(36,36,36,1) ${calculate}%)`,
+  };
 
   return (
     <div>
@@ -22,11 +21,11 @@ export default function Home() {
         <title>Shivansh | Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="grid grid-cols-3 lg:grid-cols-4 min-h-screen" >
-        <div className="col-span-1 max-h-screen bg-primary" style={backgroundStyles}>
+      <div className="grid md:grid-cols-3 lg:grid-cols-4 min-h-screen">
+        <div className="md:max-h-screen bg-primary overflow-auto overflow-x-hidden" style={backgroundStyles}>
           <LeftColumn />
         </div>
-        <div className="col-span-2 lg:col-span-3 bg-secondary">
+        <div className="lg:col-span-3 bg-secondary">
           <RightColumn scroll={scroll} setScroll={setScroll} />
         </div>
       </div>

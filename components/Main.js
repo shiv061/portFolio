@@ -5,12 +5,13 @@ import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 
 const Main = ({ divRef, setScroll, scroll, shown, setShown }) => {
-
   useEffect(() => {
-    if (scroll > 100) {
-      setShown(true)
+    if (window.screen.availWidth < 600) {
+      setShown(true);
+    } else if (scroll > 50) {
+      setShown(true);
     }
-  }, [scroll])
+  }, [scroll]);
 
   return (
     <div
@@ -18,10 +19,10 @@ const Main = ({ divRef, setScroll, scroll, shown, setShown }) => {
       onScroll={(e) => {
         setScroll(e.target.scrollTop);
       }}
-      className="h-full px-3 lg:px-10 max-h-screen overflow-scroll"
+      className="h-full px-3 lg:px-10 md:max-h-screen overflow-scroll"
     >
       {/* Main Head */}
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} className="py-6">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} className="py-6 sticky">
         <motion.h1 initial={{ y: '-100vh' }} animate={{ y: 0, transition: { duration: 1, type: 'spring' } }} className="text-6xl font-semibold text-primary">
           Shivansh Singh
         </motion.h1>
@@ -105,11 +106,13 @@ const Main = ({ divRef, setScroll, scroll, shown, setShown }) => {
         <div>
           <h1 className="tracking-widest text-primary font-semibold text-lg">PROJECTS</h1>
         </div>
-        {(scroll > 100 || shown) && <div className="lg:grid lg:grid-cols-2 lg:gap-4">
-          {data.map((item, index) => {
-            return <Projects key={index} name={item.title} tech={item.tech} imgUri={item.imgUri} uri={item.uri} />;
-          })}
-        </div>}
+        {(scroll > 100 || shown) && (
+          <div className="lg:grid lg:grid-cols-2 lg:gap-4">
+            {data.map((item, index) => {
+              return <Projects key={index} name={item.title} tech={item.tech} imgUri={item.imgUri} uri={item.uri} />;
+            })}
+          </div>
+        )}
       </div>
     </div>
   );
