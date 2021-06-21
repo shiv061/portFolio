@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 const Main = ({ divRef, setScroll, scroll, shown, setShown }) => {
   useEffect(() => {
-    if (window.screen.availWidth < 900) {
+    if (window.screen.availWidth < 790) {
       setShown(true);
     } else if (scroll > 50) {
       setShown(true);
