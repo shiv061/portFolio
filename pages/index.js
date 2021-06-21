@@ -20,6 +20,11 @@ export default function Home() {
       <Head>
         <title>Shivansh | Developer</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:url" content="https://portfolio-shiv061.vercel.app" key="ogurl" />
+        <meta property="og:image" content="https://res.cloudinary.com/dpfcrhcnj/image/upload/c_scale,w_1300/v1624258301/Screenshot_2021-06-21_at_12.09.14_PM_adx8o0.png" key="ogimage" />
+        <meta property="og:site_name" content="Article" key="ogsitename" />
+        <meta property="og:title" content="Shivansh Singh | Developer" key="ogtitle" />
+        <meta property="og:description" content="Built Using Next.js, Tailwind CSS and Framer Motion. This portfolio is showcase my projects as well as technologies i work on." key="ogdesc" />
       </Head>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 min-h-screen">
         <div className="col-span-1 md:max-h-screen bg-primary overflow-auto overflow-x-hidden" style={backgroundStyles}>
