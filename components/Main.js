@@ -19,7 +19,7 @@ const Main = ({ divRef, setScroll, scroll, shown, setShown }) => {
       onScroll={(e) => {
         setScroll(e.target.scrollTop);
       }}
-      className="h-full px-3 lg:px-10 md:max-h-screen overflow-scroll"
+      className="h-full px-3 lg:px-10 md:max-h-screen overflow-scroll overflow-y-hidden"
     >
       {/* Main Head */}
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} className="py-6 sticky">
