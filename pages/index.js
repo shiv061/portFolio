@@ -30,7 +30,7 @@ export default function Home() {
         <div className="col-span-1 md:max-h-screen bg-primary overflow-auto overflow-x-hidden" style={backgroundStyles}>
           <LeftColumn />
         </div>
-        <div className="col-span-2 lg:col-span-3 bg-secondary">
+        <div className="col-span-2 lg:col-span-3 max-w-screen-sm md:max-w-screen-2xl bg-secondary">
           <RightColumn scroll={scroll} setScroll={setScroll} />
         </div>
       </div>
