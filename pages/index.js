@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { useEffect, useMemo, useState } from 'react';
 import LeftColumn from '../components/LeftColumn';
 import RightColumn from '../components/RightColumn';
-import { useAppContext } from '../context';
 
 export default function Home() {
   const [scroll, setScroll] = useState(0);
@@ -30,7 +29,7 @@ export default function Home() {
         <div className="col-span-1 md:max-h-screen bg-primary overflow-auto overflow-x-hidden" style={backgroundStyles}>
           <LeftColumn />
         </div>
-        <div className="col-span-2 lg:col-span-3 max-w-screen-sm md:max-w-screen-2xl bg-secondary">
+        <div className="col-span-2 lg:col-span-3 overflow-y-hidden bg-secondary">
           <RightColumn scroll={scroll} setScroll={setScroll} />
         </div>
       </div>
